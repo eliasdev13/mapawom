@@ -1,0 +1,56 @@
+.empty-container {
+  flex: 1;
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.empty-logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.empty-desc {
+  max-width: 460px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.empty-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.empty-btn {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.empty-btn.primary {
+  background: #4c1d95;
+  color: white;
+}
+
+.empty-btn.secondary {
+  background: #1e1b4b;
+  color: white;
+}
+
+.json-structure {
+  background: #f4f4f4;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  max-width: 500px;
+  white-space: pre-wrap;
+  text-align: left;
+}

@@ -1,4 +1,4 @@
-// src/utils/graphLogic.js
+// src/components/Graph/graphLogic.js
 
 export function buildAdjacency(nodes, edges) {
   const adj = {};
@@ -36,23 +36,4 @@ export function bfsWithEdges(graph, adj, startNode, maxDepth = 40) {
   });
 
   return { layers, nodes: visited, edges: edgeKeys };
-}
-
-// (no la usamos ahora, pero la dejo)
-export function computeDependenciesRF(adj, startNode) {
-  const visited = new Set([startNode]);
-  const queue = [startNode];
-
-  while (queue.length) {
-    const node = queue.shift();
-    (adj[node] || []).forEach((nbr) => {
-      if (!visited.has(nbr)) {
-        visited.add(nbr);
-        queue.push(nbr);
-      }
-    });
-  }
-
-  visited.delete(startNode);
-  return visited;
 }

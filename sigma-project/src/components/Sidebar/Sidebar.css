@@ -1,0 +1,261 @@
+/* ============================================================
+   SIDEBAR PROFESIONAL TELECOM — CSS V20 FINAL
+   ============================================================ */
+
+.sidebar {
+  width: 330px;
+  height: 100vh;
+  background: #3b0d80;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-right: 3px solid #2a185a;
+  overflow: hidden;
+  transition: transform 0.35s ease;
+}
+
+.sidebar.closed {
+  transform: translateX(-330px);
+}
+
+/* HEADER */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #4c1d95;
+  padding: 12px;
+  border-bottom: 2px solid #2e1065;
+}
+
+.sidebar-logo-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.sidebar-logo-no-border {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+/* TITLE */
+.sidebar-title h2 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.sidebar-title p {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+/* CONTENT */
+.sidebar-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* BLOCKS */
+.sidebar-block {
+  background: #4c1d95;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #5b21b6;
+}
+
+.block-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* UPLOAD BUTTONS */
+.upload-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.empty-btn {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.empty-btn.primary {
+  background: #4c1d95;
+  border: 1px solid #5b21b6;
+  color: white;
+}
+
+.empty-btn.secondary {
+  background: #1e1b4b;
+  color: white;
+}
+
+/* JSON STRUCTURE */
+.json-structure {
+  margin-top: 10px;
+  background: white;
+  color: #222;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.json-structure summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #222;
+}
+
+.json-structure pre {
+  background: #f5f5f5;
+  padding: 12px;
+  margin-top: 6px;
+  white-space: pre-wrap;
+  font-size: 13px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* HUB SELECT */
+.hub-select {
+  width: 100%;
+  padding: 10px;
+  background: #4c1d95;
+  border: 1px solid #5b21b6;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+}
+
+/* SEARCH */
+.search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  background: #4c1d95;
+  border: 1px solid #5b21b6;
+  color: white;
+  padding: 10px 12px 10px 36px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.search-list {
+  margin-top: 6px;
+  background: #4c1d95;
+  border: 1px solid #5b21b6;
+  border-radius: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+.search-list li {
+  padding: 8px 10px;
+  border-bottom: 1px solid #5b21b6;
+  cursor: pointer;
+}
+
+.search-list li:hover {
+  background: #5b21b6;
+}
+
+/* INFO PANEL */
+.sidebar-panel {
+  background: #4c1d95;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #5b21b6;
+}
+
+.node-title {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* STATES */
+.state.on {
+  color: #22c55e;
+}
+.state.off {
+  color: #ef4444;
+}
+.state.unknown {
+  color: #cbd5e1;
+}
+
+/* CONNECTIONS */
+.conn-title {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.conn-list {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.conn-item {
+  cursor: pointer;
+}
+.conn-item:hover {
+  text-decoration: underline;
+}
+
+/* BUTTONS */
+.panel-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+}
+
+.btn.blue {
+  background: #2563eb;
+}
+
+.btn.orange {
+  background: #fb923c;
+  color: #1f2937;
+}
+
+.btn.dark {
+  background: #0f172a;
+}

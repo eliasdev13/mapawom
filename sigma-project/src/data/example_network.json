@@ -1,0 +1,98 @@
+{
+  "nodes": [
+    { "id": "HUB-NORTE", "tipo": "Hub", "estado": "ON", "lat": -20.15, "lng": -70.12 },
+    { "id": "BK-N1", "tipo": "Backhaul", "estado": "ON", "lat": -20.151, "lng": -70.121 },
+    { "id": "BK-N2", "tipo": "Backhaul", "estado": "ON", "lat": -20.152, "lng": -70.123 },
+    { "id": "AC-N1", "tipo": "Access", "estado": "ON", "lat": -20.153, "lng": -70.124 },
+    { "id": "AC-N2", "tipo": "Access", "estado": "OFF", "lat": -20.154, "lng": -70.125 },
+    { "id": "AC-N3", "tipo": "Access", "estado": "ON", "lat": -20.155, "lng": -70.126 },
+    { "id": "AC-N4", "tipo": "Access", "estado": "ON", "lat": -20.156, "lng": -70.128 },
+    { "id": "AC-N5", "tipo": "Access", "estado": "ON", "lat": -20.157, "lng": -70.129 },
+
+    { "id": "HUB-CENTRO", "tipo": "Hub", "estado": "ON", "lat": -20.23, "lng": -70.16 },
+    { "id": "BK-C1", "tipo": "Backhaul", "estado": "ON", "lat": -20.231, "lng": -70.161 },
+    { "id": "BK-C2", "tipo": "Backhaul", "estado": "ON", "lat": -20.232, "lng": -70.162 },
+    { "id": "BK-C3", "tipo": "Backhaul", "estado": "OFF", "lat": -20.233, "lng": -70.163 },
+    { "id": "AC-C1", "tipo": "Access", "estado": "ON", "lat": -20.234, "lng": -70.164 },
+    { "id": "AC-C2", "tipo": "Access", "estado": "ON", "lat": -20.235, "lng": -70.165 },
+    { "id": "AC-C3", "tipo": "Access", "estado": "OFF", "lat": -20.236, "lng": -70.166 },
+    { "id": "AC-C4", "tipo": "Access", "estado": "ON", "lat": -20.237, "lng": -70.167 },
+    { "id": "AC-C5", "tipo": "Access", "estado": "ON", "lat": -20.238, "lng": -70.168 },
+
+    { "id": "HUB-SUR", "tipo": "Hub", "estado": "ON", "lat": -20.31, "lng": -70.2 },
+    { "id": "BK-S1", "tipo": "Backhaul", "estado": "ON", "lat": -20.311, "lng": -70.201 },
+    { "id": "BK-S2", "tipo": "Backhaul", "estado": "ON", "lat": -20.312, "lng": -70.202 },
+    { "id": "BK-S3", "tipo": "Backhaul", "estado": "ON", "lat": -20.313, "lng": -70.203 },
+    { "id": "AC-S1", "tipo": "Access", "estado": "ON", "lat": -20.314, "lng": -70.204 },
+    { "id": "AC-S2", "tipo": "Access", "estado": "OFF", "lat": -20.315, "lng": -70.205 },
+    { "id": "AC-S3", "tipo": "Access", "estado": "ON", "lat": -20.316, "lng": -70.206 },
+    { "id": "AC-S4", "tipo": "Access", "estado": "ON", "lat": -20.317, "lng": -70.207 },
+    { "id": "AC-S5", "tipo": "Access", "estado": "ON", "lat": -20.318, "lng": -70.208 },
+    { "id": "AC-S6", "tipo": "Access", "estado": "ON", "lat": -20.319, "lng": -70.209 },
+
+    { "id": "ISO-01", "tipo": "Access", "estado": "ON", "lat": -20.5, "lng": -70.3 },
+    { "id": "ISO-02", "tipo": "Access", "estado": "ON", "lat": -20.501, "lng": -70.301 },
+    { "id": "ISO-03", "tipo": "Access", "estado": "ON", "lat": -20.502, "lng": -70.302 },
+
+    { "id": "CAIDO-01", "tipo": "Backhaul", "estado": "OFF", "lat": -20.6, "lng": -70.35 },
+    { "id": "CAIDO-02", "tipo": "Backhaul", "estado": "OFF", "lat": -20.601, "lng": -70.351 },
+
+    { "id": "NO-CON-1", "tipo": "Access", "estado": "ON", "lat": -20.7, "lng": -70.38 },
+    { "id": "NO-CON-2", "tipo": "Access", "estado": "ON", "lat": -20.701, "lng": -70.381 },
+
+    { "id": "X-ENLACE-1", "tipo": "Access", "estado": "ON", "lat": -20.8, "lng": -70.4 },
+    { "id": "X-ENLACE-2", "tipo": "Access", "estado": "ON", "lat": -20.801, "lng": -70.401 },
+    { "id": "X-ENLACE-3", "tipo": "Backhaul", "estado": "ON", "lat": -20.802, "lng": -70.402 },
+
+    { "id": "NODO-RARO1", "tipo": "Hub", "estado": "ON", "lat": -20.9, "lng": -70.5 },
+    { "id": "NODO-RARO2", "tipo": "Backhaul", "estado": "ON", "lat": -20.901, "lng": -70.501 },
+    { "id": "NODO-RARO3", "tipo": "Access", "estado": "ON", "lat": -20.902, "lng": -70.502 }
+  ],
+  "edges": [
+    { "source": "HUB-NORTE", "target": "BK-N1" },
+    { "source": "BK-N1", "target": "BK-N2" },
+    { "source": "BK-N2", "target": "AC-N1" },
+    { "source": "BK-N2", "target": "AC-N2" },
+    { "source": "BK-N1", "target": "AC-N3" },
+    { "source": "AC-N3", "target": "AC-N4" },
+    { "source": "AC-N4", "target": "AC-N5" },
+    { "source": "AC-N2", "target": "AC-N5" },
+
+    { "source": "HUB-CENTRO", "target": "BK-C1" },
+    { "source": "BK-C1", "target": "BK-C2" },
+    { "source": "BK-C2", "target": "BK-C3" },
+    { "source": "BK-C3", "target": "AC-C1" },
+    { "source": "BK-C2", "target": "AC-C2" },
+    { "source": "AC-C2", "target": "AC-C3" },
+    { "source": "AC-C3", "target": "AC-C4" },
+    { "source": "AC-C4", "target": "AC-C5" },
+
+    { "source": "HUB-SUR", "target": "BK-S1" },
+    { "source": "BK-S1", "target": "BK-S2" },
+    { "source": "BK-S2", "target": "BK-S3" },
+    { "source": "BK-S1", "target": "AC-S1" },
+    { "source": "AC-S1", "target": "AC-S2" },
+    { "source": "AC-S2", "target": "AC-S3" },
+    { "source": "AC-S3", "target": "AC-S4" },
+    { "source": "AC-S4", "target": "AC-S5" },
+    { "source": "AC-S5", "target": "AC-S6" },
+
+    { "source": "ISO-01", "target": "ISO-02" },
+    { "source": "ISO-02", "target": "ISO-03" },
+
+    { "source": "CAIDO-01", "target": "CAIDO-02" },
+
+    { "source": "X-ENLACE-1", "target": "X-ENLACE-2" },
+    { "source": "X-ENLACE-2", "target": "X-ENLACE-3" },
+
+    { "source": "NODO-RARO1", "target": "NODO-RARO2" },
+    { "source": "NODO-RARO2", "target": "NODO-RARO3" },
+
+    { "source": "HUB-NORTE", "target": "HUB-CENTRO" },
+    { "source": "HUB-CENTRO", "target": "HUB-SUR" },
+    { "source": "HUB-SUR", "target": "HUB-NORTE" },
+
+    { "source": "AC-N5", "target": "AC-C1" },
+    { "source": "AC-C5", "target": "AC-S1" }
+  ]
+}
